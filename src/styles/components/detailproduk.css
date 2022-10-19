@@ -1,0 +1,303 @@
+.detail_produk {
+    display: flex;
+    padding-top: 4.4rem;
+}
+
+.outer_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.outer_flex .konten {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.outer_flex .judul {
+    text-align: center;
+    box-shadow: 0 0 5px 0 var(--color-golden);
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family:var(--font-base);
+}
+
+.detail_produk .kiri {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+
+.detail_produk .kiri_row {
+    display: flex;
+
+}
+
+.detail_produk .kiri .tulisan > h3 {
+    font-family: var(--font-base);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.detail_produk .kiri .tulisan > p {
+    text-align: justify;
+}
+
+.detail_produk .kanan {
+    /* position: sticky;
+    top: 0; */
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.detail_produk .kanan > span:nth-child(1) {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--font-base);
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+.detail_produk .spanwarna {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--font-base);
+    margin-bottom: .3rem;
+}
+
+.detail_produk .spankuantitas {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--font-base);
+    margin-bottom: .3rem;
+}
+
+.detail_produk .spanukuran {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--font-base);
+    margin-bottom: .5rem;
+}
+
+.detail_produk .kanan .kuantitas + span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--font-alt);
+    margin-bottom: 1rem;
+}
+
+.detail_produk .kecil {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail_produk .kecil img {
+    width: 10rem;
+    height: 13rem;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.detail_produk .besar img {
+    width: 20rem;
+    height: 26.5rem;
+    border-radius: .3rem;
+    margin-left: 1rem;
+}
+
+.detail_produk .kotakbesar {
+    width: 10rem;
+    height: 12rem;
+}
+
+.detail_produk .warna {
+    height: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.detail_produk .ukuran {
+    height: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.detail_produk .flex_warna {
+    font-family: var(--font-base);
+    font-weight: 600;
+    height: 80%;
+    width: 2.5rem;
+    border-radius: 100%;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.detail_produk .Blue {
+    background-color: blue;
+}
+
+.detail_produk .Red {
+    background-color: red;
+}
+
+.detail_produk .Orange {
+    background-color: orange;
+}
+
+.detail_produk .ukuran .aktif {
+    box-shadow: 0 0 10px 0 var(--color-golden);
+}
+
+.detail_produk .flex_ukuran {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-base);
+    font-weight: 1000;
+    font-size: 1.4rem;
+    height: 90%;
+    width: 3rem;
+    margin-right: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 4px 0 var(--color-golden);
+}
+
+.detail_produk .Red {
+    box-shadow: 0 0 4px 0 #732936;
+    background: #732936;
+}
+
+.detail_produk .Black {
+    box-shadow: 0 0 4px 0 #373737;
+    background-color: #373737;
+}
+
+.detail_produk .warnaAktif {
+    box-shadow: 0 0 15px 0 var(--color-black);
+}
+
+
+.detail_produk .Navy {
+    box-shadow: 0 0 4px 0 #343756;
+    background-color: #343756;
+}
+
+.detail_produk .Green {
+    box-shadow: 0 0 4px 0 #545649;
+    background-color: #545649;
+}
+
+.detail_produk .kuantitas {
+    border: 2px solid black;
+    border-radius: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    margin-bottom: 1rem;
+}
+
+.detail_produk .kuantitas span {
+    font-size: 1.5rem;
+    padding: .4rem 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.detail_produk .kuantitas > span:nth-child(2) {
+    border-right:2px solid black ;
+    border-left:2px solid black ;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.detail_produk .kuantitas > span:nth-child(1) {
+    cursor: pointer;
+}
+
+.detail_produk .kuantitas > span:nth-child(3) {
+    cursor: pointer;
+}
+
+
+.detail_produk .tombol {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 1rem;    
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    background: transparent;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 4px 0 var(--color-golden);
+} 
+
+.detail_produk .tombol:hover {
+    box-shadow: 0 0 8px 0 var(--color-golden);
+}
+
+@media screen and (max-width: 1157px ) {
+    .outer_flex .konten{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .outer_flex .konten{
+        grid-template-columns: repeat(2, auto);
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 861px) {
+    .detail_produk {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 608px) {
+    .outer_flex .konten{
+        grid-template-columns: repeat(1, auto);
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .detail_produk .kecil img {
+        width: 8rem;
+        height: 10rem;
+    }
+    .detail_produk .besar img {
+        width: 16rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .detail_produk .kecil img {
+        width: 6rem;
+        height: 8rem;
+    }
+    .detail_produk .besar img {
+        width: 12rem;
+        height: 16rem;
+    }
+}

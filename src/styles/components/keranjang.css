@@ -1,0 +1,237 @@
+.keranjang {
+    width: 100%;
+    display: flex;
+    padding-top: 4.4rem;
+}
+
+.keranjang .kiri {
+    padding: 1rem;
+    flex: 1;
+}
+
+.keranjang .hello_flex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.keranjang .kanan {
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.keranjang .kanan .itemList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.keranjang .kanan .itemList img {
+    width: 7rem;
+    height: 9rem;
+    border-radius: .6rem;
+}
+
+.keranjang .kotak {
+    border: 2px solid var(--color-grey);
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.keranjang .kotak button{
+    cursor: pointer;
+    background: var(--color-grey);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    padding: .5rem;
+
+    border-radius: .6rem;
+}
+
+.keranjang .kotak > span:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-grey);
+}
+
+.keranjang .kotak .flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.keranjang .kotak .flex > span:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-grey);
+}
+
+.keranjang .kotak .flex > span:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.keranjang .kuantitas {
+    border: 2px solid black;
+    border-radius: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+}
+
+.keranjang .hello_tulisan{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.keranjang .hello_tulisan > span:nth-child(1){
+    width: 60%;
+    font-weight: 600;
+
+}
+
+.keranjang .hello_tulisan > span:nth-child(2){
+    width: 30%;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+
+.keranjang .kuantitas span {
+    font-size: 1.5rem;
+    padding: .3rem 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keranjang .kuantitas > span:nth-child(1) {
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+.keranjang .kuantitas > span:nth-child(3) {
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+.keranjang .kuantitas > span:nth-child(2) {
+    border-right:2px solid black ;
+    border-left:2px solid black ;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.keranjang .ikon {
+    cursor: pointer;
+
+}
+
+.keranjang .ikon:hover {
+    color: var(--color-golden);
+}
+
+@media screen and (max-width: 1080px) {
+    .keranjang {
+        flex-direction: column;
+    }
+
+    .keranjang .kuantitas {
+        width: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .keranjang .hello_tulisan {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        width: 50%;
+    }
+
+    .keranjang .hello_tulisan > span:nth-child(1){
+            width: 100%;
+    }
+
+    .keranjang .hello_tulisan > span:nth-child(2){
+            width: 100%;
+    }
+
+    .keranjang .kuantitas {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .hello_flex {
+        flex-direction: column;
+        align-items:  space-between !important;
+        justify-content: space-between !important;
+        border: 2px solid black;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: .3rem;
+        
+    }
+    .keranjang .kuantitas {
+        margin-right: 0;
+        width: 7rem;
+        margin: .5rem 0;
+
+    }
+
+
+
+    .keranjang .hello_tulisan {
+        padding-left: 0;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .keranjang .hello_tulisan > span:nth-child(1){
+        text-align: center;
+    }
+    .keranjang .hello_tulisan > span:nth-child(2){
+        width: 55%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .keranjang .hello_tulisan > span:nth-child(1){
+        font-size: .9rem;
+    }
+    .keranjang .hello_tulisan > span:nth-child(2){
+        font-size: .9rem;
+    }
+    .keranjang .kuantitas{
+        width: 6rem;
+    }
+    .keranjang .kuantitas span {
+        font-size: .1rem;
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .keranjang .hello_tulisan{
+        flex-direction: column;
+    }
+}

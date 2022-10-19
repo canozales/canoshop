@@ -1,0 +1,9 @@
+@import './basic.css';
+@import './components/navbar.css';
+@import './components/home.css';
+@import './components/daftarproduk.css';
+@import './components/footer.css';
+@import './components/kategori.css';
+@import './components/detailproduk.css';
+@import './components/keranjang.css';
+@import './components/membership.css';

@@ -1,0 +1,216 @@
+.kategori {
+    display: flex;
+    padding-top: 5rem;
+}
+
+.kategori .tombol {
+    display: none;
+    padding: .5rem;
+    top: 6rem;
+    width: 15rem;
+    position: absolute;
+    box-shadow: 0 0 4px 0 var(--color-golden);
+    border: none;
+    background: transparent;
+    border-radius: .7rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--font-base);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-golden);
+}
+
+.kotak_filter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+
+
+.kotak_filter > span{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.daftar_produk {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    row-gap: 2rem;
+}
+
+
+.kategori .tile{
+    height: 3.5rem;
+    width: 14rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.kategori .tile input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20rem;
+    cursor: pointer;
+    border: 1px solid var(--color-grey);
+    outline: none;
+    box-shadow: 15px 15px 25px rgba(2,28,53,0.05);
+
+}
+
+.kategori .tile input[type="checkbox"]:checked{
+    border: none;
+    box-shadow: 0 0 4px 0 var(--color-golden);
+}
+
+.kategori .tile label{
+    color: var(--color-grey);
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+   
+.kategori .tile label span{
+    font-size: 1rem;
+}
+
+.ikon_kotak {
+    color: var(--color-golden);
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.munculkanKotak {
+    display: block !important;
+    position: fixed;
+    height: 100%;
+    background-color: #ffffff;
+    top: 4rem;
+    padding-top: 2rem;
+}
+
+.munculkanIkon {
+    color: var(--color-golden) !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+}
+
+.sembunyikanJudul {
+    display: none;
+}
+
+@media screen and (max-width: 1150px) {
+    .daftar_produk .kartu {
+        width: 15rem;
+        height: 26rem;
+    }
+}
+
+@media screen and (max-width: 1058px) {
+    .daftar_produk {
+        grid-template-columns: repeat(2, auto);
+    }
+    .daftar_produk .kartu {
+        width: 19.5rem;
+        height: 33rem;
+    }
+}
+
+@media screen and (max-width: 967px) {
+    .daftar_produk .kartu {
+        width: 17rem;
+        height: 28rem;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .daftar_produk .kartu {
+        width: 15rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .kategori {
+        padding-top: 10rem;
+    }
+    .kotak_filter {
+        display: none;
+    }
+    .kategori .tombol {
+        display: block;
+    }
+
+    .daftar_produk {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .daftar_produk {
+        grid-template-columns: repeat(2, auto);
+    }
+    .daftar_produk .kartu {
+        width: 19.5rem;
+        height: 33rem;
+    }
+
+}
+
+@media screen and (max-width: 718px) {
+    .daftar_produk .kartu {
+        width: 17rem;
+        height: 28rem;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .daftar_produk .kartu {
+        width: 15rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .daftar_produk {
+        grid-template-columns: auto;
+    }
+    .daftar_produk .kartu {
+        width: 19.5rem;
+        height: 33rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .daftar_produk .kartu {
+        width: 17rem;
+        height: 28rem;
+    }
+    .kategori .tombol {
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+

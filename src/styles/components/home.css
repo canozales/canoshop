@@ -1,0 +1,196 @@
+
+.home {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+
+
+.tidak_aktif {
+    display: none;
+}
+
+.home .kiri {
+    flex: 1.5;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.home .kiri span:nth-child(1){
+    font-size: 4rem;
+    font-family: var(--font-base);
+}
+
+.home .kiri span:nth-child(2){
+    font-size: 1.3rem;
+    text-align: justify;
+    color: var(--color-grey);
+}
+
+.home .kiri .button{
+    font-size: 2.2rem;
+    font-family: var(--font-base);
+    border-radius: .3rem;
+    padding: .3rem 1rem;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+.home .kanan {
+    flex: 1;
+    height: 40rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .bawah {
+    position: absolute;
+    width: 10rem;
+    height: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .bawah > span {
+    font-size: 1.6rem;
+    font-weight: 800;
+    font-family: var(--font-base);
+}
+
+.home .bawah .ikonKiriKanan:hover {
+    cursor: pointer;
+}
+
+.home .kanan img {
+    width: 50%;
+    height: 90%;
+    position: relative;
+    z-index: 1;
+}
+
+.home .kanan .shape {
+    width: 85%;
+    height: 95%;
+    border-radius: 72% 28% 64% 36% / 41% 54% 46% 59%  ;
+    position: absolute;
+    /* transform: translate(0, -50%); */
+}
+
+.home .kanan .coklat {
+    background-color: #855966;
+}
+
+.perkenalan {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    clip-path: polygon(0 0%, 100% 15%, 100% 100%, 0% 85%);
+    display: flex;
+    background-image: url('../../assets/gambar/produk/chainsawc.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.perkenalan > img:nth-child(1){
+    position: absolute;
+    width: 26rem;
+    height: 35rem;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.perkenalan > img:nth-child(2){
+    position: absolute;
+    width: 20rem;
+    height: 26.5rem;
+
+    bottom: 0;
+    left: 10rem;
+}
+
+.perkenalan .tulisan {
+    position: absolute;
+    right: 20rem;
+    top: 20rem;
+    transform: rotate(20deg)
+}
+
+@media screen and (max-width: 1400px) {
+    .home .kanan img {
+        height: 70%;
+    }
+
+    .home .kanan .shape {
+        height: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+    .home {
+        flex-direction: column;
+    }
+    .home .kiri {
+        height: 20rem;
+        flex: none;
+    }
+
+    .home .bawah {
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 729px) {
+    .home .kiri {
+        height: 22rem;
+    }
+}
+
+@media screen and (max-width: 583px) {
+    .home .kiri {
+        height: 23rem;
+    }
+    .home .kiri span:nth-child(2) {
+        font-size: 1.1rem;
+    }
+    .home .kiri span:nth-child(1) {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home .kiri span:nth-child(2) {
+        font-size: 1rem;
+    }
+    .home .kiri span:nth-child(1) {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .home .kiri {
+        height: 27rem;
+    }
+
+}

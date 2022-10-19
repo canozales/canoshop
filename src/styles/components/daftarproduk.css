@@ -1,0 +1,102 @@
+.daftarProduk {
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+.kartu {
+    padding: 1rem;
+    width: 19.5rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: .8rem;
+    box-shadow: 0 0 4px 0 var(--color-golden);
+}
+
+.kartu .flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.kartu .flex span:nth-child(1) {
+    color: #8d8d8d;
+}
+
+.kartu .flex span:nth-child(2) {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.kartu .harga {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kartu .harga span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.kartu .harga .backBulat{
+    cursor: pointer;
+    box-shadow: 0 0 4px 0 var(--color-golden);
+    padding: .6rem .7rem .4rem .55rem;
+    border-radius: 3rem;
+
+}
+.kartu img {
+    width: 100%;
+    height: 100%;
+    transition: all linear .1s;
+    border-radius: .7rem;
+}
+
+.kartu img:nth-child(2){
+    height: 0;
+}
+
+.kartu .tempatGambar {
+    width: 100%;
+    height: 70%;
+}
+
+.kartu .tempatGambar:hover img:nth-child(1) {
+    height: 0;
+}
+
+.kartu .tempatGambar:hover img:nth-child(2) {
+    height: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .kartu {
+        width: 17rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 1163px) {
+    .daftarProduk {
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (max-width: 892px) {
+    .daftarProduk {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 646px) {
+    .daftarProduk {
+        grid-template-columns: repeat(1, auto);
+    }
+}

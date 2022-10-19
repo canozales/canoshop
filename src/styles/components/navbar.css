@@ -1,0 +1,143 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+
+    position: fixed;
+    z-index: 9999;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 0 var(--color-golden);
+}
+
+.navbar .kiri {
+    text-decoration: none;
+}
+
+.navbar .kiri > span {
+    font-size: 2rem;
+    color: var(--color-golden);
+    font-weight: 1000;
+    font-family: var(--font-base);
+    cursor: pointer;
+}
+
+.navbar .tengah {
+    display: flex;
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.navbar li {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.navbar .Link {
+    text-decoration: none;
+}
+
+.navbar li span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-black);
+    
+}
+
+
+.navbar .tengah li span:hover {
+    color: var(--color-golden);
+}
+
+.navbar .active span {
+    color: var(--color-golden);
+    font-weight: 600;
+}
+
+.navbar .kanan > span {
+    font-family: var(--font-base);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar .kanan > span:hover {
+    cursor: pointer;
+}
+
+.navbar_small {
+    color: var(--color-golden);
+    display: none;
+    padding-top: .2rem;
+}
+
+.navbar_small:hover{
+    cursor: pointer;
+}
+
+.navbar .smallscreen_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: .5s ease;
+    flex-direction: column;
+    z-index: 5;
+    background-color: var(--color-white)
+}
+
+.navbar .smallscreen_overlay ul {
+    justify-content: center;
+    align-items: center;
+}
+
+.smallscreen_overlay .tutup {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+}
+
+.smallscreen_overlay ul {
+    margin-top: 30%;
+    text-align: center;
+}
+
+.smallscreen_overlay ul li {
+
+    margin-bottom: 1.5rem;
+}
+
+
+.slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(.13,.82,.59,-0.05) both;
+      animation: slide-bottom 0.5s cubic-bezier(.13,.82,.59,-0.05) both;
+  }
+
+@keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateX(-55%);
+              transform: translateX(-55%);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .navbar .tengah {
+        display: none;
+    }
+
+    .navbar_small {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .navbar .kanan {
+        display: none;
+    }
+}
