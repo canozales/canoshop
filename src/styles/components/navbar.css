@@ -111,9 +111,14 @@
 
 
 .slide-bottom {
+    -webkit-animation: slide-bottom 0.4s cubic-bezier(.7,.04,.66,1.71) both;
+      animation: slide-bottom 0.4s cubic-bezier(.7,.04,.66,1.71) both;
+}
+
+/* .slide-bottom {
     -webkit-animation: slide-bottom 0.5s cubic-bezier(.13,.82,.59,-0.05) both;
       animation: slide-bottom 0.5s cubic-bezier(.13,.82,.59,-0.05) both;
-  }
+  } */
 
 @keyframes slide-bottom {
     0% {
